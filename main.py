@@ -4,8 +4,8 @@ import json
 data = {
     "result":
     [
-        "921688",
-        "903444",
+        ["921688"],
+        ["903444"],
         ["816183","902479","876088","979810"],
         ["928285","992154"],
         ["836094","889499","860003","900376","860946","911575","863811","980565","872941","995690"]
@@ -35,11 +35,6 @@ def check_user_input(event):
         return
 
     for i in range(5):
-        if len(results[i]) == 1:
-            if _input == results[i]:
-                result_text.innerText = f"ถูกรางวัลที่ {i+1}"
-                return
-        
         for j in results[i]:
             if _input == j:
                 result_text.innerText = f"ถูกรางวัลที่ {i+1}"
