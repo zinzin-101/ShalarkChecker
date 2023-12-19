@@ -29,6 +29,7 @@ def check_user_input(event):
     result_text = document.querySelector("#result")
 
     _input = user_input.value
+    user_input.value = ""
 
     if len(_input) != 6:
         result_text.innerText = "Invalid Input"
