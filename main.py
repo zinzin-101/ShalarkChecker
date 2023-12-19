@@ -42,4 +42,3 @@ def check_user_input(event):
     result_text.innerText = "ไม่ถูกรางวัล"
 
 get_number()
-
