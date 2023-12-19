@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-16">
+        <meta name= "viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Red Cross Prize Checker
+        </title>
+
+        <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css" />
+        <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
+        <script type="py" src="./main.py" config="./pyscript.toml"></script>
+
+    </head>
+    
+    <body>
+        <article>           
+            <h1>
+                สลากบำรุงกาชาดไทย 2566
+            </h1>
+
+            <p>
+                วันจันทร์ที่ 18 ธันวาคม 2566
+            </p>
+
+            <b>ตรวจสอบเลขสลาก</b>
+            <div>
+                <input type="number" id="num-input" value="" placeholder="เลขสลาก">
+            </div>
+            <div>            
+                <button py-click="test">ตรวจสอบ</button>
+            </div>
+            <div>
+                <p id="result"></p>
+            </div>
+            <div>
+                <p>สิ้นสุดการรับรางวัลในวันที่ 18 มีนาคม 2567</p>
+            </div>      
+    </body>
+
+</html>
